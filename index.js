@@ -20,7 +20,7 @@ function takeANumber(katzDeli, name) {
     var line = [];
     
    
- function currentLine1(katzDeli) {
+ function currentLine(katzDeli) {
    
    let i = 0;
    
