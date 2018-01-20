@@ -1,13 +1,16 @@
 var katzDeli = [];
 
-function takeANumber(name){
-   this.katzDeli.push(name)
-   return `Welcome, ` + name +`. You are number ${katzDeli.indexOf(name)+1} in line.`
+function takeANumber(katzDeli,name){
+   katzDeli.push(name)
+   return `Welcome, ${name}. You are number ${katzDeli.length} in line.`
 }
 
-function nowServing(){
+function nowServing(katzDeli){
   if(katzDeli.length > 0){
-     return `Currently serving ` + katzDeli.shift()
+    katzDeli.reverse()
+     var x =  `Currently serving ` + katzDeli.pop() +`.`
+     katzDeli.reverse()
+     return x
    }
      else {
        return `There is nobody waiting to be served!`
