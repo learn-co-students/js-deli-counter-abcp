@@ -4,9 +4,13 @@ function takeANumber(line, name){
   return "Welcome, " + name + ". You are number " + num + " in line."
 }
 function nowServing(line){
-  if (line.length === 0) {return "There is nobody waiting to be served!"}
-  else {return ("Currently serving " + line[0] + ".")}
-  line.shift()
+  if (line.length === 0) {
+    return "There is nobody waiting to be served!";
+  } else {
+    var newline = line[0]
+    line.shift()
+    return "Currently serving " + newline + ".";
+  }
 }
 
 function currentLine(line){
