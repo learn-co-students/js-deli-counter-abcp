@@ -25,6 +25,11 @@ function currentLine(katzDeliLine) {
       currLine = currLine + " " + (i+1);
       currLine = currLine + (". ");
       currLine = currLine + katzDeliLine[i];
+      
+      if (i < katzDeliLine.length - 1) {
+        currLine = currLine + ","
+      }
+      
       i++
     }
   }    
